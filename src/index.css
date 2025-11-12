@@ -1,13 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+html {
+  font-size: 80%;
+  scroll-behavior: smooth;
+  /* font-size: 16px; */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Tajawal','Cairo', sans-serif;
+   /*تحسين مظهر الخطوط وجعلها أكثر نعومة ووضوحًا*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1.title {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #1155cc;
+}
+
+h2.subtitle{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  font-style: normal;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
+
+h2.blue-heading{
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-weight: 700;
+font-size: 2rem;
+line-height: 1.5;
+color: #1155cc;
+}
+
+h2.orange-heading{
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-weight: 700;
+font-size: 2rem;
+font-style: normal;
+line-height: 1.5;
+color: #b29578;
+}
+
+h2.white-heading{
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-weight: 700;
+font-size: 2rem;
+line-height: 1.5;
+color: #ffffff;
+}
+
+p.normal-text{
+font-family: 'Tajawal', sans-serif;
+font-weight: 500;
+font-size: 1rem;
+font-style: normal;
+line-height: 1.25;
+color: #ffffff;
 }

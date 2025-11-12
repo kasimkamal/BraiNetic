@@ -1,0 +1,123 @@
+.contact-page {
+  padding: 2rem 1rem;
+  direction: rtl;
+}
+.contact-container {
+  max-width: 90%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.06);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Right: the form */
+.contact-form label {
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #e6eef8;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.06);
+  color: #e6eef8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid #b29758; 
+  box-shadow: 0 0 0 2px rgba(237, 181, 101, 0.3);
+}
+
+.contact-form textarea {
+  min-height: 9rem;
+}
+.contact-form .cta-button {
+  margin-top: 1rem;
+}
+
+/* Left: contact info + socials */
+.contact-info {
+  padding: 1rem;
+}
+
+.info-heading {
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b29758;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-box:hover {
+  transform: scale(1.2);
+}
+
+.contact-text h4 {
+  margin: 0;
+  color: #fff;
+}
+
+.contact-text p {
+  font-size:  1.25em;
+  font-weight: bolder;
+  margin: 0.25rem 0 0 0;
+  color: #b29758;
+}
+
+.socials-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    padding: 1rem;
+  }
+  .socials-wrapper {
+    justify-content: flex-start;
+  }
+}

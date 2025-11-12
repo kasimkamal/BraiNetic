@@ -1,0 +1,54 @@
+.social-container {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  direction: ltr;
+}
+
+.icon {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  outline: 2px solid white;
+  border-radius: 50%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  color: white;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+}
+
+.icon-whatsapp:hover {
+  background-color: #25D366;
+  outline-color: #25D366;
+}
+
+.icon-facebook:hover {
+  background-color: #1877F2;
+  outline-color: #1877F2;
+}
+
+.icon-instagram:hover {
+  background-color: #E1306C;
+  outline-color: #E1306C;
+}
+
+.icon-telegram:hover {
+  background-color: #0088CC;
+  outline-color: #0088CC;
+}
+
+.icon:hover svg {
+  animation: shake 0.25s;
+}
+
+@keyframes shake {
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(-15deg); }
+}
