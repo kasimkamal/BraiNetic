@@ -38,7 +38,7 @@ function About() {
       {/* Story Section */}
       <div className="about-story-section">
         <div className="card-icon"><i className="fa-solid fa-book-open fa-2x"></i></div>
-        <h2 className="about-title">قصتنا</h2>
+        <h2 className="gradient-heading">قصتنا</h2>
         <p className="about-story-text">
           بدأت براينتك بفكرة بسيطة، كثير من العملاء يضطرون للتعامل مع جهات متعددة لحل مشكلة واحدة. فأسسنا فريقًا متعدد التخصصات ليقدّم حلًا متكاملًا من أول خطوة وحتى ما بعد التسليم—بنية تحتية، أمن، محتوى، تصميم، تدريب، وتسويق—في منظومة واحدة متناغمة
           <br /><br />
@@ -50,14 +50,14 @@ function About() {
       <div className="about-cards-row">
         <div className="about-card">
           <div className="card-icon"><i className="fas fa-globe fa-2x"></i></div>
-          <h2 className="about-title">رؤيتنا</h2>
+          <h2 className="gradient-heading">رؤيتنا</h2>
           <p className="about-card-text">
             أن نكون الشريك الأكثر اعتمادًا في تحويل طريقة تعامل المؤسسات والأفراد مع التكنولوجيا والتعليم والخدمات الإبداعية. نحن نصور مستقبلًا يتمتع فيه كل عميل بإمكانية الوصول إلى حلول عالمية المستوى وشاملة تقود النجاح والابتكار تحت سقف واحد موثوق به
           </p>
         </div>
         <div className="about-card">
           <div className="card-icon"><i className="fas fa-bullseye fa-2x"></i></div>
-          <h2 className="about-title">رسالتنا</h2>
+          <h2 className="gradient-heading">رسالتنا</h2>
           <p className="about-card-text">
             نعمل في BraiNetic على تمكين الشركات والطلاب والمهنيين من خلال دمج التكنولوجيا والإبداع والمعرفة بسلاسة في حلول شاملة. نحن نحول التحديات إلى فرص، ونقدم التميز من خلال مجموعة متنوعة من الخدمات التي تسد الفجوة بين الابتكار التقني والتعبير الإبداعي
           </p>
@@ -67,7 +67,7 @@ function About() {
       {/* Values Section */}
       <div className="about-values-section">
         <div className="card-icon"><i className="fa-solid fa-gem fa-2x"></i></div>
-        <h2 className="about-title">قيمنا</h2>
+        <h2 className="gradient-heading">قيمنا</h2>
         <div className="about-values-row">
           {values.map((val, idx) => (
             <div className="about-value-card" key={idx}>

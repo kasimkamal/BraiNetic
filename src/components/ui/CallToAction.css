@@ -20,13 +20,13 @@
 /* title section */
 .cta-title-section {
   animation: fadeIn 0.3s ease-out;
-  
 }
 
 .cta-title {
   display: inline;
   font-size: 2.5rem;
   font-weight: bold;
+  padding: 0.5rem;
   background: radial-gradient(circle, #b29758, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
