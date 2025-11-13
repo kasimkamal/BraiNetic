@@ -149,7 +149,7 @@ function Home() {
     {/* What is special about us */}
       <div className="special-section">
         <div class="special-content">
-            <h1 className="glow-heading">ما يميز براينتك</h1>
+            <h2 className="gradient-heading">ما يميز براينتك</h2>
           <div className="special-grid">
             {specials.map((special, index) => (
             <div className="special-item" key={index}>
@@ -173,7 +173,7 @@ function Home() {
     {/* our Team */}
       <div className="team-section">
         <div className="team-content">
-          <h2 className="glow-heading">فريقنا</h2>
+          <h2 className="gradient-heading">فريقنا</h2>
           <h2 className="subtitle">فريق متكامل يجمع خبرات تقنية وإبداعية</h2>
           <div className="team-grid">
             {teamMembers.map((member, index) => (

@@ -1,6 +1,6 @@
 .contact-page {
   padding: 2rem 1rem;
-  direction: rtl;
+  /* direction: rtl; */
 }
 .contact-container {
   max-width: 90%;
@@ -8,6 +8,7 @@
   background: rgba(255,255,255,0.06);
   padding: 2rem;
   border-radius: 8px;
+  text-align: center;
 }
 
 .contact-grid {
@@ -15,7 +16,10 @@
   grid-template-columns: 50% 1fr;
   gap: 2rem;
   align-items: start;
+  text-align: right;
 }
+
+
 
 /* Right: the form */
 .contact-form label {

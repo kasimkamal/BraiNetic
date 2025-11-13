@@ -8,10 +8,8 @@ function CallToAction({ link = "/contact" }) {
       <div className="call-to-action-content">
         {/* title */}
         <div className="cta-title-section">
-          <h2 className="cta-title">
-            <span className="cta-gradient">
-              هل أنت مستعد لتجربة التميز مع برانيتك؟
-            </span>
+          <h2 className="cta-title">              
+            هل أنت مستعد لتجربة التميز مع برانيتك؟
           </h2>
           <div className="cta-dividers">
             <div className="divider divider-1"></div>

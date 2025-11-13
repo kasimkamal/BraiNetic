@@ -52,7 +52,7 @@ function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-container">
-        <h1 className="glow-heading">تواصل معنا</h1>
+        <h1 className="gradient-heading">تواصل معنا</h1>
         <div className="contact-grid">
             {/* Right: the form */}
             <div className="form-column">

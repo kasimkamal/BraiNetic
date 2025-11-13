@@ -59,8 +59,8 @@ function DesignService() {
   return (
     <>
       <div class="h-[25vh] flex items-center justify-center">
-        <h2 class="text-2xl md:text-4xl font-bold leading-[1.2] text-center">
-          <span class="bg-gradient-to-r from-white via-[hsl(42,37%,52%)] to-white bg-clip-text text-transparent">
+        <h2 class="text-2xl md:text-4xl font-bold text-center">
+          <span class="p-2 bg-gradient-to-r from-white via-[hsl(42,37%,52%)] to-white bg-clip-text text-transparent">
           خدمات التصميم والهوية البصرية          
           </span>
         </h2>
