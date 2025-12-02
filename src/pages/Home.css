@@ -13,11 +13,11 @@
     margin: 0 auto;  
     font-style: italic;
     font-size: 6rem;
-    color: #ffffff;
+    color: var(--white);
   }
 
   .hero-content h1.title span {
-    color: #b29578;
+    color: var(--gold);
   }
 
   h2.orange-heading{ 
@@ -39,22 +39,22 @@
     }
   }
 
-.service-card{
+  .service-card{
   display: flex;
   flex-direction: column; /* 🔧 Stack top + button vertically */
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   padding: 1.5rem;
-  color: white;
+  color: var(--white);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease, box-shadow 0.3s ease;
   }
 
-.service-card:hover {
+  .service-card:hover {
   transform: scale(1.02);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  border: 2px solid #436fbb;
+  border: 2px solid var(--accent-blue);
   }
 
 /* 🔧 NEW: Flex row for icon + text */
@@ -64,11 +64,11 @@
   gap: 1rem;
 }
 
-.card-icon {
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  color: #b29578;
-}
+  .card-icon {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--gold);
+  }
 
 .text-container{
   margin: 0 0.75rem;
@@ -88,33 +88,33 @@ ul.normal-text {
   line-height: 1.75;
 }
 
-.check {
-  color: #b29578;
-  margin-left: 0.5rem;
-}
+  .check {
+    color: var(--gold);
+    margin-left: 0.5rem;
+  }
 
-.cta-button {
-  align-self: center;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-family: 'Tajawal', 'Cairo', sans-serif;
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-style: italic;
-  color: #ffffff;
-  background: #0b3b8d;
-  border: 2px solid #436fbb;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+  .cta-button {
+    align-self: center;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--white);
+    background: var(--dark-blue);
+    border: 2px solid var(--accent-blue);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 
-.cta-button:hover {
-  background: #80abe1 ;
-  color: #000000; /* Dark background contrast */
-  box-shadow: 0 0 10px #436fbb;
-}
+  .cta-button:hover {
+    background: var(--light-blue);
+    color: var(--black); /* Dark background contrast */
+    box-shadow: 0 0 10px var(--accent-blue);
+  }
 
 
 /* What is special about us */
@@ -136,7 +136,7 @@ ul.normal-text {
   font-weight: bold;
   line-height: 1.5;
   padding: 0.5rem;
-  background: radial-gradient(circle, #b29758, #ffffff);
+  background: radial-gradient(circle, #e59225, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -184,8 +184,8 @@ ul.normal-text {
   min-width: 4rem;
   min-height: 4rem;
   border-radius: 50%;
-  background-color: #0b3b8d;
-  color: #ffffff;
+  background-color: var(--dark-blue);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +290,7 @@ ul.normal-text {
 /* Card Styles — ORIGINAL + EFFECT */
 .team-card {
   /* 🔸 ORIGINAL STYLES */
-  background-color: #0b3b8d;
+  background-color: var(--dark-blue);
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -311,7 +311,7 @@ ul.normal-text {
 /* Icon Styling */
 .team-card i {
   font-size: 2rem;
-  color: #b29578;
+  color: var(--gold);
   margin-bottom: 0.5rem;
 
   /* 🔸 ADDED FOR LAYERING */
@@ -323,7 +323,7 @@ ul.normal-text {
 .team-normal-text {
   font-family: 'Tajawal', sans-serif;
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--white);
   margin: 0;
   position: relative;
   z-index: 2;
@@ -347,7 +347,7 @@ ul.normal-text {
   content: '';
   position: absolute;
   inset: 5px;
-  background: #0b3b8d;
+  background: var(--dark-blue);
   border-radius: 10px;
   z-index: 1;
 }

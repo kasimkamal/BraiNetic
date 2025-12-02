@@ -17,7 +17,7 @@
   border-radius: 50%;
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
-  color: white;
+  color: var(--white);
 }
 
 .icon:hover {
@@ -25,23 +25,23 @@
 }
 
 .icon-whatsapp:hover {
-  background-color: #25D366;
-  outline-color: #25D366;
+  background-color: var(--whatsapp);
+  outline-color: var(--whatsapp);
 }
 
 .icon-facebook:hover {
-  background-color: #1877F2;
-  outline-color: #1877F2;
+  background-color: var(--facebook);
+  outline-color: var(--facebook);
 }
 
 .icon-instagram:hover {
-  background-color: #E1306C;
-  outline-color: #E1306C;
+  background-color: var(--instagram);
+  outline-color: var(--instagram);
 }
 
 .icon-telegram:hover {
-  background-color: #0088CC;
-  outline-color: #0088CC;
+  background-color: var(--twitter);
+  outline-color: var(--twitter);
 }
 
 .icon:hover svg {

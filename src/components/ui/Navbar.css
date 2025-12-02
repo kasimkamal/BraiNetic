@@ -11,7 +11,7 @@
 }
 
 .navbar-colored {
-  background-color: #252951;
+  background-color: var(--navy);
 }
 
 .nav-list {
@@ -21,7 +21,7 @@
 }
 
 .nav-list a, .nav-list span {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
@@ -36,7 +36,7 @@
 
 .nav-list a.active,
 .nav-list span.active {
-  color: #b29758;
+  color: var(--gold);
 }
 
 
@@ -50,7 +50,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #252951;
+  background-color: var(--navy);
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   z-index: 100;

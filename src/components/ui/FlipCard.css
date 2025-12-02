@@ -38,7 +38,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   opacity: 1;
-  background: linear-gradient(-45deg, #ffffff 0%, #b29758 100%);
+  background: radial-gradient(circle, var(--gold), var(--white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,10 +58,9 @@
   justify-content: center;
   text-align: center;
   background: linear-gradient(135deg,#b29758 0% , #1155cc 50%,#252951 100% );
-  color: #ffffff;
+  color: var(--white);
   padding: 1.5rem;
   line-height: 1.6;
-  border-radius: 16px;
   transform: translateX(96%);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
@@ -78,19 +77,23 @@
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
+  /* background: radial-gradient(circle, var(--white), var(--gold)); */
   background: #b29758;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+
+
+  color: var(--navy);
+  border: 2px solid #34495e;
+  box-shadow: 0 0 10px #34495e;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .content-button:hover {
-  color: #ffffff;
-  background: rgba(37, 41, 81, 0.1);
-
-  box-shadow: 0 0 10px #436fbb;
+  color: var(--white);
+  background: var(--primary);
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 10px var(--accent-blue);
 }
 
 .card:hover .content {

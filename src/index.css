@@ -1,3 +1,5 @@
+
+@import './colors.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +28,7 @@ h1.title {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.5;
-  color: #1155cc;
+  color: var(--dark-blue);
 }
 
 h2.subtitle{
@@ -35,7 +37,7 @@ h2.subtitle{
   font-size: 1.7rem;
   font-style: normal;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--white);
   margin: 0;
 }
 
@@ -44,7 +46,7 @@ font-family: 'IBM Plex Sans Arabic', sans-serif;
 font-weight: 700;
 font-size: 2rem;
 line-height: 1.5;
-color: #1155cc;
+color: var(--dark-blue);
 }
 
 h2.orange-heading{
@@ -53,7 +55,7 @@ font-weight: 700;
 font-size: 2rem;
 font-style: normal;
 line-height: 1.5;
-color: #b29578;
+color: var(--gold);
 }
 
 h2.white-heading{
@@ -61,7 +63,7 @@ font-family: 'IBM Plex Sans Arabic', sans-serif;
 font-weight: 700;
 font-size: 2rem;
 line-height: 1.5;
-color: #ffffff;
+color: var(--white);
 }
 
 p.normal-text{
@@ -70,5 +72,5 @@ font-weight: 500;
 font-size: 1rem;
 font-style: normal;
 line-height: 1.25;
-color: #ffffff;
+color: var(--white);
 }

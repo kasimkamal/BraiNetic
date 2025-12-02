@@ -12,8 +12,6 @@ padding: 0.5rem;
 }
 
 .footer-container:hover {
-background: rgba(255, 255, 255, 0.1);
-transform: translateY(-5px);
 box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
 
@@ -39,7 +37,7 @@ box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
 }
 
 .footer-links ul li:hover {
-    color: white;
+    color: var(--gold);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 

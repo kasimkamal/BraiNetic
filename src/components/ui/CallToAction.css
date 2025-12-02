@@ -18,16 +18,12 @@
 }
 
 /* title section */
-.cta-title-section {
-  animation: fadeIn 0.3s ease-out;
-}
-
 .cta-title {
   display: inline;
   font-size: 2.5rem;
   font-weight: bold;
   padding: 0.5rem;
-  background: radial-gradient(circle, #b29758, #ffffff);
+  background: radial-gradient(circle, var(--gold), var(--white));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -57,28 +53,17 @@
 }
 
 .divider-1 {
-  background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(42, 37%, 52%));
+  background: linear-gradient(to right, var(--white), var(--gold));
 }
 
 .divider-2 {
-  background: linear-gradient(to right, hsl(42, 37%, 52%), hsl(0, 0%, 100%));
+  background: radial-gradient( var(--gold), var(--white));
   animation-delay: 150ms;
 }
 
 .divider-3 {
-  background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(42, 37%, 52%));
+  background: linear-gradient(to left, var(--white), var(--gold));
   animation-delay: 300ms;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .subtitle {
@@ -89,29 +74,21 @@
 /* cta button */
 .contact-button {
   font-size: 1.25rem;
-  color: #ffffff;
+  color: var(--white);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 2rem;
-  border: 0;
+  border: 2px solid transparent;
   position: relative;
   overflow: hidden;
   border-radius: 10rem;
-  transition: all 0.02s;
+  transition: all 0.02s, border-color 0.2s;
   font-weight: bold;
   cursor: pointer;
   z-index: 1;
   box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
-}
-
-.contact-button:hover {
-  background: rgb(17, 85, 204);
-  color: rgb(255, 255, 255);
-}
-
-.contact-button:active {
-  transform: scale(0.97);
+  box-sizing: border-box;
 }
 
 .hoverEffect {
@@ -127,24 +104,28 @@
 }
 
 .hoverEffect div {
-  background: linear-gradient(
-    90deg,
-    rgba(178, 151, 88, 1) 5%,
-    rgba(37, 41, 81, 1) 49%,
-    rgba(37, 41, 81, 1) 100%
-  );
-  border-radius: 40rem;
+  background: linear-gradient(90deg, #e59225 50%,#436fbb 5%);
+  border-radius: 30rem;
   width: 10rem;
   height: 10rem;
   transition: 0.4s;
-  filter: blur(20px);
+  filter: blur(10px);
   animation: effect infinite 3s linear;
   opacity: 0.7;
 }
 
+.contact-button:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--gold);
+}
+
+.contact-button:active {
+  transform: scale(0.97);
+}
+
 .contact-button:hover .hoverEffect div {
-  width: 8rem;
-  height: 8rem;
+  background: var(--primary);
 }
 
 @keyframes effect {

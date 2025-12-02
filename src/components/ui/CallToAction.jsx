@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './CallToAction.css';
 
-function CallToAction({ link = "/contact" }) {
+function CallToAction() {
   return (
     <div className="call-to-action-section">
       <div className="call-to-action-content">
@@ -24,7 +24,7 @@ function CallToAction({ link = "/contact" }) {
           فأنت بحاجة إلى شريك يفهم الصورة الأكبر
         </h2>
 
-        <Link to={link} className="contact-button">
+        <Link to="/contact" className="contact-button">
           تواصل معنا
           <div className="hoverEffect">
             <div></div>
