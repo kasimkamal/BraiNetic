@@ -43,10 +43,20 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        {/* Render footer on all pages except Contact */}
+        <FooterVisibilityWrapper />
       </Router>
     </>
   );
 }
 
 export default App;
+
+function FooterVisibilityWrapper() {
+  // useLocation can only be used inside Router, and this component
+  // is rendered inside Router so it's safe to call here.
+  const { pathname } = useLocation();
+  // Hide footer on /contact (also handle trailing slash)
+  if (pathname === '/contact' || pathname === '/contact/') return null;
+  return <Footer />;
+}
